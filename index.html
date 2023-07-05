@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildStone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="script.js" as="script" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./Images/TitleIcon.png">
+</head>
+
+<body>
+
+    <!-- Banner Container -->
+
+    <div class="Container1">
+
+        <!-- Header -->
+
+        <div class="Header" id="Header">
+
+            <!-- Logo  -->
+
+            <div class="Logo" id="Logo">
+                <img src="./Images/Logo.png" alt="Logo" class="LogoImg" id="LogoImg" width="200">
+
+                <div class="Hamburger" id="Hamburger">
+                    <span class="line" id="line"> </span>
+                    <span class="line" id="line"> </span>
+                    <span class="line" id="line"> </span>
+                </div>
+            </div>
+
+            <!-- Nav Links  -->
+
+            <div class="Navs" id="Navs">
+                <li class="Links">
+                    <button class="btn" onclick="window.location.href = '#Banner';">Home</button>
+                </li>
+                <li class="Links">
+                    <button class="btn" onclick="window.location.href = '#Products';">Products</button>
+                </li>
+                <li class="Links">
+                    <button class="btn" onclick="window.location.href = '#Features';">About</button>
+                </li>
+                <li class="Links">
+                    <button class="btn" onclick="window.location.href = '#Footer';">Contact</button>
+                </li>
+            </div>
+
+            <!-- Hamburger Menu  -->
+
+
+
+        </div>
+
+        <!-- Banner Content  -->
+
+        <div class="Banner" id="Banner">
+            <div class="BannerImg" id="BannerImg">
+                <img src="./Images/P1.png" alt="Product1" class="BannerProduct" id="BannerProduct">
+            </div>
+
+            <div class="BannerDiscription" id="BannerDiscription">
+                <h2 class="Flavour" id="Flavour">Wild Stone Edge Perfume</h2>
+
+                <div class="DiscriptiveTxt" id="DiscriptiveTxt">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>consectetur adipisicing elit. Odio dolore</li>
+                    <li>consequuntur laboriosam similique iste voluptatibus</li>
+                </div>
+
+                <h3 class="Rating" id="Rating">⭐⭐⭐⭐☆</h3>
+
+                <div class="Price">
+                    <h4 class="OriginalPrice"> <del>₹ 599.00</del></h4>
+                    <h4 class="SellingPrice">₹ 355.00 </h4>
+                </div>
+
+                <div class="BannerBtns" id="BannerBtns">
+                    <button class="BannerBtn" id="P1btn"><img src="./Images/P1.png" width="100%"></button>
+                    <button class="BannerBtn" id="P2btn"><img src="./Images/P2.png" width="100%"> </button>
+                    <button class="BannerBtn" id="P3btn"> <img src="./Images/P3.png" width="100%"></button>
+                    <button class="BannerBtn" id="P4btn"> <img src="./Images/P4.png" width="100%"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Products Container -->
+
+    <div class="Container2">
+        <div class="Products" id="Products">
+
+            <!-- Product Card 1  -->
+
+            <div class="Card" id="Card">
+                <img class="CardImg" id="CardImg" src="./Images/Product1.png" alt="Product" width="180">
+
+                <div class="CardContent" id="CardContent">
+                    <h2 class="Flavour" id="Flavour">Edge Perfume</h2>
+                    <p class="CardTxt"> Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <div class="Reveal" id="Reveal1">
+                        <h3 class="Rating" id="Rating">⭐⭐⭐⭐☆</h3>
+
+                        <div class="Price">
+                            <h4 class="OriginalPrice"> <del>₹ 599.00</del></h4>
+                            <h4 class="SellingPrice">₹ 355.00 </h4>
+                        </div>
+                    </div>
+
+                    <button class="CardBtn" id="CardBtn"> Read More!</button>
+                </div>
+            </div>
+
+
+            <!-- Product Card 2  -->
+
+            <div class="Card" id="Card">
+                <img class="CardImg" id="CardImg" src="./Images/Product2.png" alt="Product" width="180">
+
+                <div class="CardContent" id="CardContent">
+                    <h2 class="Flavour" id="Flavour">Hydra Energy</h2>
+                    <p class="CardTxt"> Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <div class="Reveal" id="Reveal2">
+                        <h3 class="Rating" id="Rating">⭐⭐⭐☆☆</h3>
+
+                        <div class="Price">
+                            <h4 class="OriginalPrice"> <del>₹ 599.00</del></h4>
+                            <h4 class="SellingPrice">₹ 355.00 </h4>
+                        </div>
+                    </div>
+
+                    <button class="CardBtn" id="CardBtn"> Read More!</button>
+                </div>
+            </div>
+
+            <!-- Product Card 3  -->
+
+            <div class="Card" id="Card">
+                <img class="CardImg" id="CardImg" src="./Images/Product3.png" alt="Product" width="180">
+
+                <div class="CardContent" id="CardContent">
+                    <h2 class="Flavour" id="Flavour">Ultra Sensual</h2>
+                    <p class="CardTxt"> Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <div class="Reveal" id="Reveal3">
+                        <h3 class="Rating" id="Rating">⭐⭐☆☆☆</h3>
+
+                        <div class="Price">
+                            <h4 class="OriginalPrice"> <del>₹ 599.00</del></h4>
+                            <h4 class="SellingPrice">₹ 355.00 </h4>
+                        </div>
+                    </div>
+
+                    <button class="CardBtn" id="CardBtn"> Read More!</button>
+                </div>
+            </div>
+
+            <!-- Product Card 4  -->
+
+            <div class="Card" id="Card">
+                <img class="CardImg" id="CardImg" src="./Images/Product4.png" alt="Product" width="180">
+
+                <div class="CardContent" id="CardContent">
+                    <h2 class="Flavour" id="Flavour">Forest Spice</h2>
+                    <p class="CardTxt"> Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <div class="Reveal" id="Reveal4">
+                        <h3 class="Rating" id="Rating">⭐⭐⭐☆☆</h3>
+
+                        <div class="Price">
+                            <h4 class="OriginalPrice"> <del>₹ 599.00</del></h4>
+                            <h4 class="SellingPrice">₹ 355.00 </h4>
+                        </div>
+                    </div>
+
+                    <button class="CardBtn" id="CardBtn"> Read More!</button>
+                </div>
+            </div>
+
+            <!-- Product Card 5  -->
+
+            <div class="Card" id="Card">
+                <img class="CardImg" id="CardImg" src="./Images/Product5.png" alt="Product" width="180">
+
+                <div class="CardContent" id="CardContent">
+                    <h2 class="Flavour" id="Flavour">Night Rider</h2>
+                    <p class="CardTxt"> Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <div class="Reveal" id="Reveal5">
+                        <h3 class="Rating" id="Rating">⭐⭐⭐☆☆</h3>
+
+                        <div class="Price">
+                            <h4 class="OriginalPrice"> <del>₹ 599.00</del></h4>
+                            <h4 class="SellingPrice">₹ 355.00 </h4>
+                        </div>
+                    </div>
+
+                    <button class="CardBtn" id="CardBtn"> Read More!</button>
+                </div>
+            </div>
+            <!-- Product Card 6  -->
+
+            <div class="Card" id="Card">
+                <img class="CardImg" id="CardImg" src="./Images/Product6.png" alt="Product" width="180">
+
+                <div class="CardContent" id="CardContent">
+                    <h2 class="Flavour" id="Flavour">Combo Pack</h2>
+                    <p class="CardTxt"> Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <div class="Reveal" id="Reveal6">
+                        <h3 class="Rating" id="Rating">⭐⭐⭐⭐☆</h3>
+
+                        <div class="Price">
+                            <h4 class="OriginalPrice"> <del>₹ 1099.00</del></h4>
+                            <h4 class="SellingPrice">₹ 999.00 </h4>
+                        </div>
+                    </div>
+                    <button class="CardBtn" id="CardBtn"> Read More!
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- AboutUs  -->
+
+    <div class="Container1">
+        <div class="Features" id="Features">
+
+            <!-- Feature 1 -->
+
+            <div>
+                <img src="./Images/COD.png" alt="COD" class="FeaturesImg" width="100">
+                <h3> COD Available</h3>
+            </div>
+            <!-- Feature 2 -->
+
+            <div>
+                <img src="./Images/Quality.png" alt="Finest Quality" class="FeaturesImg" width="100">
+                <h3> Finest Quality</h3>
+            </div>
+            <!-- Feature 3 -->
+
+            <div>
+                <img src="./Images/NaturalChemical.png" alt="No Harsh Chemical" class="FeaturesImg" width="100">
+                <h3> No Harsh Chemical</h3>
+            </div>
+            <!-- Feature 4 -->
+
+            <div>
+                <img src="./Images/FreeDelivery.png" alt="Free Shipping" class="FeaturesImg" width="100">
+                <h3> Free Shipping</h3>
+            </div>
+        </div>
+
+        <!-- About  -->
+
+        <div class="AboutUs" id="AboutUs">
+            <h2 class="Flavour">Best Long Lasting Perfumes for Men Online by Wild Stone</h2>
+            <p class="CardTxt">
+                Remember when you recognize something even before you can see it, just by their pleasing smell. Well
+                that very smell is what we call as fragrance. It is basically a measured fusion of organic and natural
+                compounds. Nowadays perfumes are synonymous to fragrances. Best part is that now we can buy perfumes for
+                men online in just a matter of seconds. There is something incredibly powerful about fragrances. Our
+                Sensory abilities are the most strongest natural skill we are born with. Usually, perfumes are divided
+                into five categories based on their concentration. Fragrances are unique and give pleasure to billions
+                of people around the globe who buy perfume online with ease and wears these fragrances every day.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+
+    <div class="Container2">
+        <div class="FooterContainer">
+            <div class="Footer" id="Footer">
+                <div class="FooterContent" id="FooterContent">
+                    <div class="Logo" id="Logo">
+                        <img src="./Images/Logo.png" alt="Logo" class="LogoImg" width="200">
+                    </div>
+                    <p class="CardTxt">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse nam similique excepturi
+                        reprehenderit
+                        quod quos natus ut cumque tempore possimus! Consectetur quam labore animi cupiditate harum ad
+                        ipsum
+                        dignissimos similique.
+                    </p>
+
+                    <div class="ReachMe" id="ReachMe">
+                        <!-- <div> -->
+                        <img src="./Images/Mail.png" alt="Mail" class="ReachImg" width="40">
+                        <p class="Reach">Support@Wildstone.com</p>
+                        <!-- </div> -->
+
+                        <!-- <div> -->
+                        <img src="./Images/Phone.png" alt="Phone" class="ReachImg" width="40">
+                        <p class="Reach">1800 1234 5678</p>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+                <div class="Contact" id="Contact">
+                    <h2 class="Flavour">To keep up with the latest Fragrances</h2>
+                    <p class="CardTxt">Signup our newsletter</p>
+                    <form class="ContactForm" id="ContactForm" action="" method="post">
+                        <input type="email" class="MailInput" id="MailInput" placeholder="Email" required>
+                        <button class="SubmitBtn" id="SubmitBtn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="SocialMedia" id="SocialMedia">
+                <button class="btn" onclick="window.location.href = 'https://www.instagram.com/';"><img
+                        src="./Images/Instagram.png" width="40"></button>
+                <button class="btn" onclick="window.location.href = 'https://www.facebook.com/';"><img
+                        src="./Images/Facebook.png" width="40"></button>
+                <button class="btn" onclick="window.location.href = 'https://www.youtube.com/';"><img
+                        src="./Images/Youtube.png" width="40"></button>
+                <button class="btn" onclick="window.location.href = 'https://www.twitter.com/';"><img
+                        src="./Images/Twitter.png" width="40"></button>
+            </div>
+
+            <div class="Copyrights" id="Copyrights">
+                <p class="CardTxt">© Developed by <a href="https://sricharan7113.github.io/SricharanN/"> Sricharan</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Javascript Linking  -->
+    <script src="script.js"></script>
+</body>
+
+</html>

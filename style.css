@@ -1,0 +1,708 @@
+* {
+    margin: auto;
+}
+
+/* Banner Container */
+
+.Container1,
+.Container2 {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#199593ab, #559988);
+
+}
+
+.Container2 {
+    background: linear-gradient(#559988, #199593ab);
+}
+
+/* Header Div */
+
+.Header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(68, 70, 69, 0.048);
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0%;
+    z-index: 2;
+    margin: 0% auto;
+}
+
+/* Logo  */
+
+.Logo {
+    width: 20%;
+}
+
+/* Nav Links */
+
+.Navs {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.btn {
+    font-size: large;
+    border: 0px;
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    text-shadow: 5px 5px 15px rgba(179, 179, 179, 0.475);
+    padding-bottom: 5px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+/* Main Banner */
+
+.Banner {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f2f3f21b;
+    border-radius: 20px;
+
+}
+
+/* Banner Buttons  */
+
+.BannerBtns {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.BannerBtn {
+    width: 20%;
+    height: 15%;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 0px double rgba(223, 223, 223, 0.336);
+    background-color: transparent;
+    clip-path: circle(30%);
+}
+
+.BannerBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 20px rgba(249, 249, 249, 0.379);
+    border: 0px;
+}
+
+#P1btn {
+    background: linear-gradient(#199593ab, #559988);
+}
+
+#P2btn {
+    background: linear-gradient(#199593bd, #08708ffc);
+}
+
+#P3btn {
+    background: linear-gradient(#ef5555e2, #966476);
+}
+
+#P4btn {
+    background: linear-gradient(#31d77cf0, #49807289);
+}
+
+/* Banner Discription */
+
+.BannerDiscription {
+    width: 50%;
+    height: fit-content;
+    padding: 20px;
+    text-align: left;
+}
+
+.Rating {
+    color: rgb(255, 239, 21);
+    font-size: small;
+    font-weight: 500;
+    text-align: center;
+}
+
+.Flavour {
+    width: 80%;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: xxx-large;
+    font-weight: 599;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.DiscriptiveTxt {
+    width: 80%;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin: 10px auto;
+    font-weight: 100;
+    list-style-type: square;
+}
+
+.Price {
+    width: 30%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Ysabeau Infant', sans-serif;
+
+}
+
+.OriginalPrice {
+    font-size: medium;
+
+}
+
+.SellingPrice {
+    font-size: x-large;
+    font-weight: 650;
+}
+
+/* Products  */
+
+.Products {
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 10%;
+    column-gap: 10%;
+    margin: auto;
+    padding: 5%;
+}
+
+/* Card Styling  */
+
+.Card {
+    width: 100%;
+    max-height: 300px;
+    background-color: #f2f3f21b;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f2f3f21b;
+    border-radius: 20px;
+    transition: 0.5s ease-out;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 1px 1px 10px rgba(88, 88, 88, 0.224);
+}
+
+.Card:hover {
+    max-height: 400px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.CardImg,
+.FeaturesImg {
+    transition: 0.5s ease-out;
+}
+
+.CardImg:hover {
+    transform: translate(20px);
+    cursor: zoom-out;
+}
+
+
+.Card:hover .Reveal {
+    display: flex;
+    transition: 1s;
+}
+
+.Reveal {
+    display: none;
+    transition: 0.5;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.Reveal>.Price {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    margin: auto;
+}
+
+.Card h2 {
+    width: 70%;
+    font-size: x-large;
+    text-align: center;
+    word-wrap: break-word;
+    font-weight: 600;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 200px;
+}
+
+.CardTxt {
+    font-size: small;
+    font-weight: 400;
+    font-family: 'Segoe UI', Roboto;
+    word-wrap: break-word;
+}
+
+.CardBtn {
+    font-size: medium;
+    margin: 15px auto;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 0px;
+    color: blue;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.CardBtn:hover {
+    transform: scale(1.1);
+}
+
+/* Features  */
+
+.Features {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.Features h3 {
+    font-size: larger;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Open Sans';
+    font-weight: 500;
+    word-wrap: break-word;
+    color: #131313ea;
+}
+
+.FeaturesImg:hover {
+    transform: scale(1.1);
+}
+
+/* AboutUs  */
+
+.AboutUs {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    background-color: #f2f3f21b;
+    border-radius: 20px;
+    margin: auto;
+    padding: 2%;
+}
+
+.AboutUs>.Flavour {
+    font-size: xx-large;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.AboutUs>.CardTxt {
+    width: 90%;
+    font-size: medium;
+    padding: 10px;
+}
+
+/* Footer  */
+
+.FooterContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #f2f3f227;
+}
+
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+.FooterContent {
+    width: 40%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.FooterContent .CardTxt {
+    width: 80%;
+    font-size: larger;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.ReachMe {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Contact  */
+
+.Contact,
+.ContactForm {
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Contact>.Flavour {
+    font-size: xx-large;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.Contact .CardTxt {
+    font-size: medium;
+    margin: 10px auto;
+}
+
+
+.MailInput {
+    width: 100%;
+    height: 35px;
+    border: 0px;
+    border-radius: 5px;
+    margin: 10px auto;
+    transition: 0.5s;
+}
+
+.MailInput:hover {
+    transform: scale(1.1);
+    border: 1px solid rgba(92, 92, 92, 0.509);
+}
+
+.SubmitBtn {
+    width: 80%;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.509);
+    background-color: rgba(219, 223, 225, 0.452);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.SubmitBtn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.509);
+    background-color: rgba(219, 223, 225, 0.244);
+}
+
+/* Social Media */
+
+.SocialMedia {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 30px auto;
+}
+
+/* Copyrights */
+
+.Copyrights .CardTxt {
+    font-size: large;
+}
+
+.Copyrights .CardTxt>a {
+    color: black;
+}
+
+
+@media screen and (max-width:880px) {
+
+
+    /* Container  */
+
+    .Container1,
+    .Container2 {
+        width: 100%;
+        min-height: auto;
+        height: 100%;
+        border: 0px;
+    }
+
+    /* Logo  */
+
+    .Logo {
+        width: 100%;
+    }
+
+    /* Header  */
+
+    .Header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+    }
+
+
+    .Links {
+        color: black;
+    }
+
+    .Navs {
+        width: 30%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 50px;
+        right: -100%;
+        transition: 1s;
+        color: black;
+        background-color: rgba(42, 43, 42, 0.329);
+        margin: 25px auto;
+        border-radius: 20px;
+    }
+
+    /* Hamburger Menu  */
+
+    .Hamburger {
+        width: 40px;
+        height: 10px;
+        float: right;
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+
+    .line {
+        width: 100%;
+        height: 5px;
+        background-color: rgba(37, 37, 37, 0.646);
+        margin: 10px;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .Slide {
+        right: 0;
+        transition: 1s;
+        line-height: 30px;
+    }
+
+    /* Banner Container  */
+
+    .Banner {
+        width: 85%;
+        margin: 30% auto;
+    }
+
+    .BannerDiscription {
+        width: 100%;
+    }
+
+
+    .BannerProduct {
+        width: 50%;
+        margin: 10px auto;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Flavour {
+        width: 100%;
+        padding: 0%;
+        font-size: x-large;
+        text-align: center;
+        font-weight: 600;
+        margin: auto;
+    }
+
+    .DiscriptiveTxt {
+        width: 90%;
+        font-size: medium;
+        font-weight: 400;
+        text-align: left;
+        margin: auto;
+    }
+
+    .Price {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .BannerBtns {
+        width: 100%;
+        margin: auto;
+    }
+
+    .BannerBtn {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* Products Container  */
+
+    .Products {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0%;
+        margin: 20px auto;
+    }
+
+    /* Product Card  */
+
+    .Card {
+        width: 70%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .Card .CardTxt{
+        text-align: center;
+    }
+
+    .Features {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        font-size: medium;
+        margin: 10px auto;
+    }
+
+    .Features h3 {
+        font-size: large;
+    }
+
+    .FeaturesImg {
+        width: 30%;
+    }
+
+    /* About Us  */
+
+    .AboutUs {
+        width: 90%;
+        padding: 10px;
+        text-align: justify;
+        font-size: small;
+        margin: 20px auto;
+    }
+
+    .AboutUs .Flavour {
+        font-size: large;
+        padding: 0%;
+        text-align: center;
+    }
+
+    /* Footer  */
+
+    .Footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .Footer .Logo {
+        width: 10%;
+        margin: auto;
+        padding: 0%;
+    }
+
+
+    .FooterContent,
+    .CardTxt {
+        width: 100%;
+        margin: auto;
+        padding: 0%;
+        text-align: justify;
+        font-size: small;
+    }
+
+    .ReachMe {
+        width: 100%;
+        font-size: small;
+        margin: 10px auto;
+        padding: auto;
+    }
+
+    /* Contact  */
+
+    .Contact {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+        text-align: justify;
+    }
+
+    .Contact .CardTxt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ContactForm {
+        width: 70%;
+    }
+
+    /* Social Media  */
+
+    .SocialMedia {
+        margin: auto;
+    }
+}
